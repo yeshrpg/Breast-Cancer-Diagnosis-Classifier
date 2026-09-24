@@ -19,7 +19,7 @@ A full-stack, production-deployed neural network system that classifies breast t
 
 ## 📸 Screenshot
 
-`![App Screenshot](./working_UI.png)`
+![App Screenshot](./working_UI.png)
 
 ---
 
