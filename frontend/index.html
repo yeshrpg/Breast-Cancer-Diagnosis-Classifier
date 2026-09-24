@@ -1,0 +1,46 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Breast Cancer Diagnosis Classifier</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Breast Cancer Diagnosis Classifier</h1>
+    <p class="subtitle">Enter tumor measurements or load a sample case</p>
+
+    <div class="sample-buttons">
+      <button id="loadMalignant" class="btn-sample malignant">Load Malignant Sample</button>
+      <button id="loadBenign" class="btn-sample benign">Load Benign Sample</button>
+    </div>
+
+    <form id="predictForm">
+      <div class="feature-grid" id="featureGrid"></div>
+      <button type="submit" class="btn-predict">Predict</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <h2 id="resultLabel"></h2>
+      <p id="resultConfidence"></p>
+      <div class="prob-bars">
+        <div class="prob-row">
+          <span>Malignant</span>
+          <div class="bar-bg"><div id="malignantBar" class="bar-fill malignant"></div></div>
+          <span id="malignantPct"></span>
+        </div>
+        <div class="prob-row">
+          <span>Benign</span>
+          <div class="bar-bg"><div id="benignBar" class="bar-fill benign"></div></div>
+          <span id="benignPct"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="error" class="error hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
