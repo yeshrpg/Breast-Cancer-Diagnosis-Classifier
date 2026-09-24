@@ -2,8 +2,23 @@
 
 A full-stack, production-deployed neural network system that classifies breast tumor samples as **malignant** or **benign** from 30 diagnostic features — trained, served, and deployed end-to-end.
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Keras-orange)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-teal)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED)
+![Deployed](https://img.shields.io/badge/Status-Live-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
+
 **🔗 Live App:** [breast-cancer-diagnosis-classifier-omega.vercel.app](https://breast-cancer-diagnosis-classifier-omega.vercel.app/)
 **⚙️ API:** [breast-cancer-diagnosis-classifier-csrm.onrender.com](https://breast-cancer-diagnosis-classifier-csrm.onrender.com)
+
+> ⏱ Note: the API is hosted on Render's free tier, which spins down when idle. The first request after inactivity can take ~30–50s to wake up — this is expected, not a bug.
+
+---
+
+## 📸 Screenshot
+
+`![App Screenshot](./working_UI.png)`
 
 ---
 
@@ -98,12 +113,12 @@ Response:
 
 This is an educational/portfolio project, **not a certified medical diagnostic tool**. Do not use it for actual clinical decision-making.
 
-## 📌 Next Steps
+## 📄 License
 
-- [ ] Add authentication/rate-limiting to the public API before wider sharing
-- [ ] Add a confusion matrix / ROC curve visualization page to the frontend
-- [ ] Add SHAP or feature-importance explainability to show *why* a prediction was made
-- [ ] Write unit tests for `model.py` and `main.py` (pytest + FastAPI TestClient)
-- [ ] Add CI (GitHub Actions) to run tests on push before deploy
-- [ ] Upgrade free-tier Render plan (or add a keep-alive ping) to eliminate cold-start delay
-- [ ] Optional: swap CORS `allow_origins=["*"]` for the exact Vercel domain once stable
+Licensed under the [MIT License](./LICENSE).
+
+## 👤 Author
+
+**YESH**
+BTech CSE (AI/ML) student
+GitHub: [@yeshrpg](https://github.com/yeshrpg)
