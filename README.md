@@ -10,6 +10,7 @@ A full-stack, production-deployed neural network system that classifies breast t
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 **🔗 Live App:** [breast-cancer-diagnosis-classifier-omega.vercel.app](https://breast-cancer-diagnosis-classifier-omega.vercel.app/)
+
 **⚙️ API:** [breast-cancer-diagnosis-classifier-csrm.onrender.com](https://breast-cancer-diagnosis-classifier-csrm.onrender.com)
 
 > ⏱ Note: the API is hosted on Render's free tier, which spins down when idle. The first request after inactivity can take ~30–50s to wake up — this is expected, not a bug.
